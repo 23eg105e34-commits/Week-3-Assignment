@@ -1,0 +1,71 @@
+###
+GET http://localhost:3000/user-api/users
+
+
+
+###
+POST http://localhost:3000/user-api/users
+Content-Type: :application/json
+{
+  "id": 1,
+  "name": "Harsha",
+  "age": 21
+}
+
+###
+PUT http://localhost:3000/user-api/users
+Content-Type: application/javascript
+{
+  "id": 1,
+  "name": "Harsha Updated",
+  "age": 22
+}
+
+
+###
+GET http://localhost:3000/user-api/users/1
+
+###
+DELETE http://localhost:3000/user-api/users/1
+
+
+
+
+
+###
+GET http://localhost:3000/product-api/products
+
+
+###
+GET http://localhost:3000/product-api/products/product-id/101
+
+
+### 
+GET http://localhost:3000/product-api/products/product-brand/apple
+
+
+###
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+  "productId": 101,
+  "name": "iPhone",
+  "brand": "apple",
+  "price": 80000
+}
+
+
+###
+PUT http://localhost:3000/product-api/products/101
+Content-Type: application/javascript
+{
+  "productId": 101,
+  "name": "iPhone 15",
+  "brand": "apple",
+  "price": 90000
+}
+
+
+###
+DELETE http://localhost:3000/product-api/products/101
