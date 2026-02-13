@@ -1,0 +1,74 @@
+### Read all users
+GET http://localhost:4000/user-api/users
+
+
+### Create user
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "name":"ravi",
+    "age":24,
+    "password":"ravi123",
+    "city":"Hyd1"
+}
+
+
+
+###read user by object id
+GET http://localhost:4000/user-api/users/697c826ecce8bde7891ed6f7
+
+
+### update user
+PUT http://localhost:4000/user-api/users/697c826ecce8bde7891ed6f8
+Content-Type: application/json
+
+{
+    "name":"anil1",
+    "age":20,
+    "city":"hyd2"
+}
+
+###
+POST http://localhost:4000/user-api/auth
+Content-Type: application/json
+
+{
+    "name":"manasa",
+    "password":"manasa123"
+}
+
+
+### delete user by id
+DELETE http://localhost:4000/user-api/users/697dbc6db9462d847725ce6a
+
+
+
+### get all products data
+GET http://localhost:4000/product-api/products
+
+###add new products
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "pid":123,
+    "productName":"laptop",
+    "price":15
+}
+
+
+###  get produxt by id
+GET http://localhost:4000/product-api/products/697f3bfc58a09a9188e75dfb
+
+
+
+### get product by id
+PUT http://localhost:4000/product-api/products/697f3bfc58a09a9188e75dfb
+Content-Type: application/json
+
+{
+    "pid":123,
+    "productName":"mobile",
+    "price":25
+}
